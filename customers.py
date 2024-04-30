@@ -17,7 +17,7 @@ moja_sciezka = ""
 
 def dodaj_klienta(fun):
     imie, email, telefon, ulica, miasto, kraj = fun
-    id = random.randint(1000, 9999)
+    id = str(random.randint(1000, 9999))
     with open('customer.csv', 'a', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow([id, imie, email, telefon])
