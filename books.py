@@ -10,7 +10,7 @@ def dodaj_ksiazke(id, autor, tytul, liczba_stron, data_wydania):
         autor (str): Autor książki.
         tytul (str): Tytuł książki.
         liczba_stron (int): Liczba stron książki.
-        data_wydania (str): Data wydania ksiązki
+        data_wydania (date): Data wydania ksiązki
     """
     with open('book.csv', 'a', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
